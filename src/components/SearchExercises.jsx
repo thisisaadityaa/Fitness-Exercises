@@ -24,9 +24,9 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
       const searchedExercises = exercisesData.filter(
         (item) => item.name.toLowerCase().includes(search)
-          || item.target.toLowerCase().includes(search)
-          || item.equipment.toLowerCase().includes(search)
-          || item.bodyPart.toLowerCase().includes(search),
+               || item.target.toLowerCase().includes(search)
+               || item.equipment.toLowerCase().includes(search)
+               || item.bodyPart.toLowerCase().includes(search),
       );
 
       window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
@@ -50,7 +50,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           placeholder="Search Exercises"
           type="text"
         />
-        <Button className="search-btn" sx={{ bgColor: '#FF2625', color: '#fff', textTransform: 'none', width: { lg: '173px', xs: '80px' }, height: '56px', position: 'absolute', right: '0px', fontSize: { lg: '20px', xs: '14px' } }} onClick={handleSearch}>
+        <Button className="search-btn" sx={{ bgcolor: '#FF2625', color: '#fff', textTransform: 'none', width: { lg: '173px', xs: '80px' }, height: '56px', position: 'absolute', right: '0px', fontSize: { lg: '20px', xs: '14px' } }} onClick={handleSearch}>
           Search
         </Button>
       </Box>
